@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-Fruit init()
+Fruit initFruit()
 {
 	Fruit* newFruit = new Fruit;
 

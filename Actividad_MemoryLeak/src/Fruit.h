@@ -10,4 +10,4 @@ struct Fruit
 	Texture texture = { };
 };
 
-Fruit init();
+Fruit initFruit();

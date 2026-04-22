@@ -13,6 +13,9 @@ void game()
 
 	Fruit* fruit = nullptr;
 
+	int spawnTimer = 30;
+	int timer = 30;
+
 	while (!WindowShouldClose())
 	{
 		switch (actualScreen)
@@ -24,7 +27,14 @@ void game()
 			break;
 		case GAMEPLAY:
 
+			if (timer <= 0)
+			{
+				fruit = new Fruit(initFruit());
 
+				timer = spawnTimer;
+			}
+			else
+				timer--;
 
 			break;
 		case END_GAME:
@@ -36,16 +46,14 @@ void game()
 			break;
 		}
 	}
-
-	deleteRes();
 }
 
 void initRes()
 {
-
+	
 }
 
 void deleteRes()
 {
-
+	
 }
