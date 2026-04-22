@@ -1,6 +1,10 @@
-#include "Fruit.h"
+#include "game.h"
+
+#include <iostream>
 
 int main()
 {
+	srand(time(0));
 
+	game();
 }

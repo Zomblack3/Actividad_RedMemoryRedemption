@@ -3,6 +3,7 @@
 #include "raylib.h"
 
 #include "consts.h"
+#include "Fruit.h"
 
 void game()
 {
@@ -10,7 +11,7 @@ void game()
 
 	InitWindow(windowWidth, windowHeigth, "GAME");
 
-	initRes();
+	Fruit* fruit = nullptr;
 
 	while (!WindowShouldClose())
 	{

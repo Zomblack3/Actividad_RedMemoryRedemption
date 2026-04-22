@@ -128,12 +128,14 @@
   <ItemGroup>
     <ClCompile Include="src\Fruit.cpp" />
     <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\gameplay.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\consts.h" />
     <ClInclude Include="src\Fruit.h" />
     <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\gameplay.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

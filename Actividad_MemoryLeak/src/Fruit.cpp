@@ -1,11 +1,16 @@
 #include "Fruit.h"
 
-#include "raylib.h"
 
-struct Fruit
+
+#include <iostream>
+
+Fruit init()
 {
-	int x = 0;
-	int y = 0;
+	Fruit* newFruit = new Fruit;
 
-	Texture texture = { };
-};
+	newFruit->x = rand() % 10;
+
+	return *newFruit;
+
+	delete newFruit;
+}
