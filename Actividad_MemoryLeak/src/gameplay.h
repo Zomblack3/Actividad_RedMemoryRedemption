@@ -3,4 +3,4 @@
 #include "game.h"
 #include "Fruit.h"
 
-void gameplay(SCREEN actualScreen, Fruit* fruit);
+void gameplay(SCREEN& actualScreen, Fruit* fruit);

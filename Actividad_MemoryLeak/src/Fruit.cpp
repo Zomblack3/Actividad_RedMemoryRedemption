@@ -1,6 +1,6 @@
 #include "Fruit.h"
 
-
+#include "consts.h"
 
 #include <iostream>
 
@@ -8,7 +8,10 @@ Fruit init()
 {
 	Fruit* newFruit = new Fruit;
 
-	newFruit->x = rand() % 10;
+	newFruit->x = rand() % windowWidth;
+	newFruit->y = rand() % windowHeigth;
+
+	newFruit->texture = LoadTexture("textures/apple.png");
 
 	return *newFruit;
 
